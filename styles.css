@@ -1,0 +1,66 @@
+/* Body-elementin tyyli - sijoitetaan laskin keskelle ruutua */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Laskimen kehys */
+.calculator {
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Laskimen näyttö */
+#display {
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 10px;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    box-sizing: border-box; 
+    border: 1px solid #ccc; /* Lisätään kehys näyttöalueelle */
+}
+
+/* Laskimen napit */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+
+button {
+    padding: 10px;
+    font-size: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Operaattoreiden napit*/
+button.operator {
+    background-color: #ff704d;
+    color: #fff;
+}
+
+/* Erikoistoimintojen painikkeet*/
+button.special {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.operator {
+    background-color: #ff704d;
+}
